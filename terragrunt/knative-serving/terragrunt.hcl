@@ -1,14 +1,9 @@
 terraform {
-  source = "../../modules/istio/"
+  source = "../../modules/knative-serving/"
 }
 
 dependency "k8s_cluster" {
   config_path = "../k8s-cluster/"
-  mock_outputs = {
-    k8s_token = "PLACEHOLDER_TOKEN"
-    k8s_host = "PLACEHOLDER_HOST"
-    k8s_cluster_ca_certificate = "UExBQ0VIT0xERVJfQ0EK"
-  }
 }
 
 include "root" {

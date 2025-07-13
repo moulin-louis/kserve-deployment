@@ -1,5 +1,5 @@
 terraform {
-  source = "../../modules/knative/"
+  source = "../../modules/knative-operator/"
 }
 
 dependency "k8s_cluster" {

@@ -14,4 +14,6 @@ inputs = {
   k8s_host                   = dependency.k8s_cluster.outputs.k8s_host
   k8s_token                  = dependency.k8s_cluster.outputs.k8s_token
   k8s_cluster_ca_certificate = dependency.k8s_cluster.outputs.k8s_cluster_ca_certificate
+
+  scw_private_network_id = dependency.k8s_cluster.outputs.scw_private_network.id
 }

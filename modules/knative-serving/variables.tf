@@ -9,7 +9,3 @@ variable "k8s_token" {
 variable "k8s_cluster_ca_certificate" {
   type = string
 }
-
-variable "scw_private_network_id" {
-  type = string
-}

@@ -12,3 +12,7 @@ output "k8s_cluster_ca_certificate" {
   value     = scaleway_k8s_cluster.this.kubeconfig[0].cluster_ca_certificate
   sensitive = true
 }
+
+output "scw_private_network" {
+  value = scaleway_vpc_private_network.pn_priv
+}
